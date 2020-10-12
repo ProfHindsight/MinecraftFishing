@@ -1,0 +1,1 @@
+python wire.py -i 3 -o 15 -c 2 --dtype float32 --samplerate 44100 --blocksize 1024 --latency 0.05

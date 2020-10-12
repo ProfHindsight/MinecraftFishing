@@ -31,7 +31,7 @@ PADDED_SIZE = 2**14
 FORMAT = pyaudio.paInt16
 CHANNELS = 1
 RATE = 44100
-RECORD_SECONDS = 120
+RECORD_SECONDS = 0
 KEEP_AUDIO = 0
 
 
@@ -148,7 +148,7 @@ try:
 					print('I don\'t hear anything')
 					done = 1
 
-				if max(abs(c))*10**7 > 900:
+				if max(abs(c))*10**7 > 800:
 					stream.stop_stream()
 					print('fish')
 					retreive()
